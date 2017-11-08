@@ -1,0 +1,20 @@
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" (click)="isCollapsed = !isCollapsed">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="">simplyScreens</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse" [collapse]="isCollapsed">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+        <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+        <li><a routerLink="/service" routerLinkActive="active">Service</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
