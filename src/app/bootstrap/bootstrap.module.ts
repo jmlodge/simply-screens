@@ -12,7 +12,7 @@ import { CollapseModule } from 'ngx-bootstrap';
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
-    CollapseModule.forRoot()
+    CollapseModule.forRoot(),
   ],
   exports: [BsDropdownModule, TooltipModule, ModalModule, CollapseModule]
 })

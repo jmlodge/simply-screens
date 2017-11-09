@@ -1,0 +1,42 @@
+.home-banner {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.home-banner img {
+  position: relative;
+  width: 100%;
+}
+.home-search {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  z-index: 10;
+}
+
+.home-search img {
+  width: 100px;
+  display: inline-block;
+}
+
+.home-search h2 {
+  display: inline-block;
+  padding-right: 20px;
+
+}
+
+.home-search form {
+  text-align: center;
+}
+
+.home-search input {
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 26px;
+}
+
+.home-search button {
+  margin-top: 10px;
+
+}
