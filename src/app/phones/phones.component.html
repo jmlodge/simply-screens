@@ -1,3 +1,10 @@
-<p>
-  phones works!
-</p>
+<div class="container">
+  <h3>Top Screen Repairs</h3>
+  <div class="grid grid-pad">
+    <a *ngFor="let phone of phones" class="col-1-4">
+      <div class="module hero">
+        <h4>{{phone.id}} | {{phone.name}}</h4>
+      </div>
+    </a>
+  </div>
+</div>
