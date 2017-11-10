@@ -1,9 +1,12 @@
 <div class="container">
   <h3>Top Screen Repairs</h3>
   <div class="ph-flx-con">
-    <a *ngFor="let phone of phones" class="col-1-4">
+    <a *ngFor="let phone of phones">
       <div class="module">
-        <h4>{{phone.id}} | {{phone.name}}</h4>
+        <img [src]="phone.image">
+        <h4>{{phone.name}}</h4>
+        <br>
+        <h4 id="mod">{{phone.model}}</h4>
       </div>
     </a>
   </div>

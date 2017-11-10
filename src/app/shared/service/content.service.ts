@@ -11,7 +11,10 @@ export class ContentService {
     },
     'about': {},
     'service': {},
-    'content': {}
+    'content': {},
+    'nav': {
+      logo: '/assets/mobile-phone-logo-icon.png'
+    }
   };
 }
 

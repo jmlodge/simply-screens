@@ -10,8 +10,7 @@ import { ContentService } from '../shared/service/content.service';
 export class HomeComponent implements OnInit {
   homeObj: Object;
 
-  constructor(
-    private contentService: ContentService) { }
+  constructor(private contentService: ContentService) { }
 
   ngOnInit() {
     this.homeObj = this.contentService.Objs['home'];

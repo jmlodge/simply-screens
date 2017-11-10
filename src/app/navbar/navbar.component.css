@@ -1,3 +1,31 @@
+nav {
+  min-height: 75px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
 nav.navbar.navbar-inverse {
   margin-bottom: 0;
+}
+
+.page-scroll {
+  min-height: 50px;
+}
+
+.page-scroll img {
+  opacity: 0;
+}
+
+img {
+  height: 50px;
+  margin-top: 10px;
+  opacity: 1;
+  -webkit-transition: opacity .75s ease-in-out;
+  -moz-transition: opacity .75s ease-in-out;
+  -ms-transition: opacity .75s ease-in-out;
+  -o-transition: opacity .75s ease-in-out;
+  transition: opacity .75s ease-in-out;
 }
