@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { PhonesComponent } from './phones/phones.component';
 import { PhoneService } from './shared/service/phone.service';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { PhoneService } from './shared/service/phone.service';
     NavbarComponent,
     HomeComponent,
     PhonesComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

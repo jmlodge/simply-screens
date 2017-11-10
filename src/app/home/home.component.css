@@ -18,6 +18,7 @@
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 10px 10px 5px #888888;
+  border-radius: 2px;
 }
 
 @media screen and (max-width: 768px) {
@@ -88,6 +89,15 @@
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%)
+}
+
+@media screen and (max-width: 1205px) {
+  .pop-repairs {
+    position: relative;
+  }
+  .home-banner {
+    height: 60vh;
+  }
 }
 
 
