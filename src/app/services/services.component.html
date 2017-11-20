@@ -1,0 +1,90 @@
+<div class="container">
+  <h3 id="top-con">Apple</h3>
+  <div class="ph-flx-con">
+
+    <a *ngFor="let phone of phones">
+      <ng-container *ngIf="phone.name === 'iPhone'">
+        <div class="module">
+          <img [src]="phone.image">
+          <div class="info-flex">
+            <h4>{{phone.name}} {{phone.model}}</h4>
+            <button type="button" class="btn btn-info" (click)="openModal(template)">
+              Info
+            </button>
+          </div>
+        </div>
+      </ng-container>
+    </a>
+  </div>
+
+  <h3 class="con-space">Samsung</h3>
+  <div class="ph-flx-con">
+
+    <a *ngFor="let phone of phones">
+      <ng-container *ngIf="phone.name === 'Samsung'">
+        <div class="module">
+          <img [src]="phone.image">
+          <div class="info-flex">
+            <h4>{{phone.name}} {{phone.model}}</h4>
+            <button type="button" class="btn btn-info" (click)="openModal(template)">
+              Info
+            </button>
+          </div>
+        </div>
+      </ng-container>
+    </a>
+  </div>
+
+  <h3 class="con-space">Google</h3>
+  <div class="ph-flx-con">
+
+    <a *ngFor="let phone of phones">
+      <ng-container *ngIf="phone.name === 'Pixel'">
+        <div class="module">
+          <img [src]="phone.image">
+          <div class="info-flex">
+            <h4>{{phone.name}} {{phone.model}}</h4>
+            <button type="button" class="btn btn-info" (click)="openModal(template)">
+              Info
+            </button>
+          </div>
+        </div>
+      </ng-container>
+    </a>
+  </div>
+
+  <h3 class="con-space">HTC</h3>
+  <div class="ph-flx-con">
+
+    <a *ngFor="let phone of phones">
+      <ng-container *ngIf="phone.name === 'HTC'">
+        <div class="module">
+          <img [src]="phone.image">
+          <div class="info-flex">
+            <h4>{{phone.name}} {{phone.model}}</h4>
+            <button type="button" class="btn btn-info" (click)="openModal(template)">
+              Info
+            </button>
+          </div>
+        </div>
+      </ng-container>
+    </a>
+  </div>
+</div>
+
+
+
+<ng-template #template>
+  <div *ngFor="let phone of phones; let i = index">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">{{phone.name}} {{phone.model}}</h4>
+        <button type="button" class="close pull-right"
+                aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        This is a modal.
+      </div>
+  </div>
+</ng-template>

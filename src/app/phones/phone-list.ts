@@ -8,9 +8,9 @@ export const PHONES: PhoneClass[] = [
   { id: 2, model: '6s', name: 'iPhone', cost: '', screen: '', repair: '', image: '/assets/iphone-6s-plus.jpg' },
   { id: 3, model: '7', name: 'iPhone', cost: '', screen: '', repair: '', image: 'assets/iphone-7-plus.jpg' },
   { id: 4, model: '8', name: 'iPhone', cost: '', screen: '', repair: '', image: 'assets/iPhone-8-plus.jpg' },
-  { id: 5, model: '1', name: 'Pixel', cost: '', screen: '', repair: '', image: 'assets/pixel.jpeg' },
-  { id: 6, model: '1 XL', name: 'Pixel', cost: '', screen: '', repair: '', image: 'assets/pixel-xl.jpeg' },
-  { id: 7, model: '2', name: 'Pixel', cost: '', screen: '', repair: '', image: 'assets/pixel-2.jpeg' },
+  { id: 5, model: '1', name: 'Pixel', cost: '', screen: '', repair: '', image: 'assets/pixel.jpg' },
+  { id: 6, model: '1 XL', name: 'Pixel', cost: '', screen: '', repair: '', image: 'assets/pixel-xl.jpg' },
+  { id: 7, model: '2', name: 'Pixel', cost: '', screen: '', repair: '', image: 'assets/pixel-2.jpg' },
   { id: 10, model: 'S8', name: 'Samsung', cost: '', screen: '', repair: '', image: 'assets/samsung-galaxy-s8.jpg' },
   { id: 12, model: 'S7', name: 'Samsung', cost: '', screen: '', repair: '', image: '/assets/samsung-galaxy-S7.jpg' },
 ];
