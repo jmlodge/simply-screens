@@ -15,6 +15,7 @@ import { ServicesComponent } from './services/services.component';
 import { AppBootstrapModule } from './bootstrap/bootstrap.module';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { ModalModule } from 'ngx-bootstrap';
+import { ContactFromComponent } from './contact-from/contact-from.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { ModalModule } from 'ngx-bootstrap';
     PhonesComponent,
     FooterComponent,
     ServicesComponent,
+    ContactFromComponent,
   ],
   imports: [
     BrowserModule,
