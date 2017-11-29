@@ -1,3 +1,109 @@
-<p>
-  contact-from works!
-</p>
+<div class="container">
+  <div class="contact-left">
+    <div [hidden]="submitted">
+      <h3>Contact Form</h3>
+      <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+        <div class="form-group col-sm-6">
+          <label for="firstname">First Name</label>
+          <input type="text" class="form-control" id="firstname" required
+          [(ngModel)]="model.firstname" name="firstname" #name="ngModel" #spy>
+          <div [hidden]="name.valid || name.pristine"
+               class="alert alert-danger">
+            Name is required
+          </div>
+
+        </div>
+
+        <div class="form-group col-sm-6">
+          <label for="lastname">Last Name</label>
+          <input type="text" class="form-control" id="lastname" required
+                 [(ngModel)]="model.lastname" name="lastname">
+        </div>
+
+        <div class="form-group pad-right">
+          <label for="address">Address Line 1</label>
+          <input type="text" class="form-control" id="address" required
+                 [(ngModel)]="model.address" name="address">
+        </div>
+
+        <div class="form-group pad-right">
+          <label for="address2">Address Line 2</label>
+          <input type="text" class="form-control" id="address2"
+                 [(ngModel)]="model.address2" name="address2">
+        </div>
+
+        <div class="form-group col-sm-6">
+          <label for="town">Town</label>
+          <input type="text" class="form-control" id="town" required
+                 [(ngModel)]="model.town" name="town">
+        </div>
+
+        <div class="form-group col-sm-6">
+          <label for="postcode">Post Code</label>
+          <input type="text" class="form-control" id="postcode" required
+                 [(ngModel)]="model.postcode" name="postcode">
+        </div>
+
+        <div class="form-group pad-right">
+          <label for="phone">Phone</label>
+          <input type="tel" class="form-control" id="phone" required
+                 [(ngModel)]="model.phone" name="phone">
+        </div>
+
+        <div class="form-group pad-right">
+          <label for="email">Email</label>
+          <input type="text" class="form-control" id="email" required
+                 [(ngModel)]="model.email" name="email">
+        </div>
+
+        <div class="form-group pad-right">
+          <label for="brand">Phone Brand</label>
+          <select class="from-control" id="brand" required
+          [(ngModel)]="model.phonebrand" name="brands">
+            <option *ngFor="let brand of brands" [value]="brand">{{brand}}</option>
+          </select>
+        </div>
+
+        <div class="form-group pad-right">
+          <label for="message">Your Message</label>
+          <input type="text" class="form-control" id="message" required
+                 [(ngModel)]="model.message" name="message">
+        </div>
+
+        <button type="button" class="btn btn-default" (click)="newContact()">New Contact</button>
+        <button type="submit" class="btn btn-success" [disabled]="!contactForm.form.valid">Submit</button>
+
+      </form>
+
+    </div>
+    <div [hidden]="!submitted">
+      <button class="btn btn-primary" (click)="submitted=false">Edit</button>
+    </div>
+  </div>
+
+  <div class="contact-right">
+    <h3>Need a new screen... We come to you</h3>
+    <p>
+      That's right we will come to your home or place of work an repair your broken smart phone screen right there and
+      then. Just fill out the contact form and we will get back to you the same day to confirm repair!
+    </p>
+
+    <div class="map-card">
+      <h3>Location</h3>
+      <p>You can find use located on the map below</p>
+      <app-map></app-map>
+      <h4>Address</h4>
+      <p>6 Carolan Ct, Golcar</p>
+      <p>Huddersfield, HD7 4NA</p>
+    </div>
+
+    <h3>Social Media</h3>
+    <br>
+    <div class="media-icons">
+      <a href="#"><i class="fa fa-facebook fa-3x"></i></a>
+      <a href="#"><i class="fa fa-twitter fa-3x"></i></a>
+      <a href="#"><i class="fa fa-linkedin fa-3x"></i></a>
+      <a href="#"><i class="fa fa-instagram fa-3x"></i></a>
+    </div>
+  </div>
+</div>
