@@ -10,6 +10,9 @@ export class PhoneService {
   getPhones(): Observable<PhoneClass[]> {
     return of (PHONES);
   }
+  getPhone(id: number): Observable<PhoneClass> {
+    return of (PHONES.find(phone => phone.id === id));
+  }
   constructor() { }
 
 }

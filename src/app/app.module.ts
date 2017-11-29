@@ -20,12 +20,14 @@ import { ContentService } from './shared/service/content.service';
 import { AppBootstrapModule } from './bootstrap/bootstrap.module';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { ModalModule } from 'ngx-bootstrap';
+import { PhoneDetailComponent } from './phone-detail/phone-detail.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'home', component: HomeComponent },
   { path: 'service', component: ServicesComponent},
-  { path: 'contact', component: ContactFromComponent }
+  { path: 'contact', component: ContactFromComponent },
+  { path: 'detail/:id', component: PhoneDetailComponent},
 ];
 
 
@@ -39,6 +41,7 @@ const appRoutes: Routes = [
     ServicesComponent,
     ContactFromComponent,
     MapComponent,
+    PhoneDetailComponent,
   ],
   imports: [
     BrowserModule,

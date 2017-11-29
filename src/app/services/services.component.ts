@@ -11,7 +11,6 @@ import { BsModalRef, BsModalService} from 'ngx-bootstrap';
 export class ServicesComponent implements OnInit {
   public modalRef: BsModalRef;
   phones: PhoneClass [];
-  index: any;
 
   getPhones(): void {
     this.phoneService.getPhones()
