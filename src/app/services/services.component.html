@@ -2,15 +2,12 @@
   <h3 id="top-con">Apple</h3>
   <div class="ph-flx-con">
 
-    <a *ngFor="let phone of phones">
+    <a *ngFor="let phone of phones" routerLink="/detail/{{phone.id}}">
       <ng-container *ngIf="phone.name === 'iPhone'">
         <div class="module">
           <img [src]="phone.image">
           <div class="info-flex">
             <h4>{{phone.name}} {{phone.model}}</h4>
-            <button type="button" class="btn btn-info" (click)="openModal(template)">
-              Info
-            </button>
           </div>
         </div>
       </ng-container>
@@ -20,15 +17,12 @@
   <h3 class="con-space">Samsung</h3>
   <div class="ph-flx-con">
 
-    <a *ngFor="let phone of phones">
+    <a *ngFor="let phone of phones" routerLink="/detail/{{phone.id}}">
       <ng-container *ngIf="phone.name === 'Samsung'">
         <div class="module">
           <img [src]="phone.image">
           <div class="info-flex">
             <h4>{{phone.name}} {{phone.model}}</h4>
-            <button type="button" class="btn btn-info" (click)="openModal(template)">
-              Info
-            </button>
           </div>
         </div>
       </ng-container>
@@ -38,15 +32,12 @@
   <h3 class="con-space">Google</h3>
   <div class="ph-flx-con">
 
-    <a *ngFor="let phone of phones">
+    <a *ngFor="let phone of phones" routerLink="/detail/{{phone.id}}">
       <ng-container *ngIf="phone.name === 'Pixel'">
         <div class="module">
           <img [src]="phone.image">
           <div class="info-flex">
             <h4>{{phone.name}} {{phone.model}}</h4>
-            <button type="button" class="btn btn-info" (click)="openModal(template)">
-              Info
-            </button>
           </div>
         </div>
       </ng-container>
@@ -56,15 +47,12 @@
   <h3 class="con-space">HTC</h3>
   <div class="ph-flx-con">
 
-    <a *ngFor="let phone of phones">
+    <a *ngFor="let phone of phones" routerLink="/detail/{{phone.id}}">
       <ng-container *ngIf="phone.name === 'HTC'">
         <div class="module">
           <img [src]="phone.image">
           <div class="info-flex">
             <h4>{{phone.name}} {{phone.model}}</h4>
-            <button type="button" class="btn btn-info" (click)="openModal(template)">
-              Info
-            </button>
           </div>
         </div>
       </ng-container>

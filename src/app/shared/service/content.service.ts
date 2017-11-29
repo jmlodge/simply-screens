@@ -10,7 +10,9 @@ export class ContentService {
       icon: 'assets/main-icon-home.png'
     },
     'about': {},
-    'service': {},
+    'service': {
+      image: '/assets/smashed screen.jpg'
+    },
     'content': {},
     'nav': {
       logo: '/assets/mobile-phone-logo-icon.png'

@@ -1,3 +1,7 @@
-<p>
-  phone-detail works!
-</p>
+<div class="container">
+  <div class="detail" *ngIf="phone">
+    <h2>{{ phone.name }}</h2>
+    <div> id: {{ phone.id }} </div>
+  </div>
+  <button (click)="goBack()">go back</button>
+</div>
