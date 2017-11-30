@@ -7,20 +7,18 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
-import { PhonesComponent } from './phones/phones.component';
 import { FooterComponent } from './footer/footer.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactFromComponent } from './contact-from/contact-from.component';
 import { MapComponent } from './map/map.component';
-
 import { PhoneService } from './shared/service/phone.service';
 import { ContentService } from './shared/service/content.service';
-
 
 import { AppBootstrapModule } from './bootstrap/bootstrap.module';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { ModalModule } from 'ngx-bootstrap';
 import { PhoneDetailComponent } from './phone-detail/phone-detail.component';
+
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
@@ -36,7 +34,6 @@ const appRoutes: Routes = [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    PhonesComponent,
     FooterComponent,
     ServicesComponent,
     ContactFromComponent,

@@ -3,7 +3,7 @@ import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 
 import { PhoneClass } from '../../phone';
-import { PHONES } from '../../phones/phone-list';
+import { PHONES } from './phone-list';
 
 @Injectable()
 export class PhoneService {

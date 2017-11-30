@@ -3,8 +3,8 @@
   <div class="home-search">
     <img [src]="homeObj.icon">
     <h2>{{homeObj.title}}</h2>
-    <form>
-      <input placeholder=" What screen are you looking for?">
+    <form id="filter">
+      <input placeholder=" What screen are you looking for?"/>
       <button type="button"><i class="fa fa-search"></i></button>
     </form>
     <h5>{{homeObj.subtitle}}</h5>
@@ -12,5 +12,17 @@
 
 </div>
 <div class="pop-repairs">
-  <app-phones></app-phones>
+  <div class="container">
+    <h3>Top Screen Repairs</h3>
+    <div class="ph-flx-con">
+      <a *ngFor="let phone of phones | slice:0:4" routerLink="/detail/{{phone.id}}">
+        <div class="module">
+          <img [src]="phone.image">
+          <h4>{{phone.name}}</h4>
+          <br>
+          <h4 id="mod">{{phone.model}}</h4>
+        </div>
+      </a>
+    </div>
+  </div>
 </div>

@@ -1,4 +1,4 @@
-import { PhoneClass } from '../phone';
+import { PhoneClass} from '../../phone';
 
 export const PHONES: PhoneClass[] = [
   { id: 1, model: '6', name: 'iPhone', cost: '', screen: '', repair: '', image: 'assets/iphone-6.jpg' },
@@ -14,4 +14,3 @@ export const PHONES: PhoneClass[] = [
   { id: 10, model: 'S8', name: 'Samsung', cost: '', screen: '', repair: '', image: 'assets/samsung-galaxy-s8.jpg' },
   { id: 12, model: 'S7', name: 'Samsung', cost: '', screen: '', repair: '', image: '/assets/samsung-galaxy-S7.jpg' },
 ];
-
