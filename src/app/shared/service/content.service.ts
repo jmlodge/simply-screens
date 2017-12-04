@@ -14,6 +14,7 @@ export class ContentService {
     'about': {
       title: 'About',
       subtitle: 'Meet the team!',
+      testTitle: 'Testimonials',
       image: {
         me: 'assets/joseph.jpg',
         sarah: 'assets/sarah.jpg',

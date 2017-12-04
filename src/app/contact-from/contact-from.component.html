@@ -6,7 +6,7 @@
         <div class="form-group col-sm-6">
           <label for="firstname">First Name</label>
           <input type="text" class="form-control" id="firstname" required
-          [(ngModel)]="model.firstname" name="firstname" #firstname="ngModel" #spy>
+                 [(ngModel)]="model.firstname" name="firstname" #firstname="ngModel" #spy>
           <div [hidden]="firstname.valid || firstname.pristine"
                class="alert alert-danger">
             First Name is required
@@ -83,7 +83,7 @@
         <div class="form-group pad-right">
           <label for="brand">Phone Brand</label>
           <select class="from-control" id="brand" required
-          [(ngModel)]="model.phonebrand" name="brands">
+                  [(ngModel)]="model.phonebrand" name="brands">
             <option *ngFor="let brand of brands" [value]="brand">{{brand}}</option>
           </select>
         </div>
