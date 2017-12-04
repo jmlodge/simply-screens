@@ -6,8 +6,8 @@
         <div class="form-group col-sm-6">
           <label for="firstname">First Name</label>
           <input type="text" class="form-control" id="firstname" required
-          [(ngModel)]="model.firstname" name="firstname" #name="ngModel" #spy>
-          <div [hidden]="name.valid || name.pristine"
+          [(ngModel)]="model.firstname" name="firstname" #firstname="ngModel" #spy>
+          <div [hidden]="firstname.valid || firstname.pristine"
                class="alert alert-danger">
             First Name is required
           </div>
@@ -17,8 +17,8 @@
         <div class="form-group col-sm-6">
           <label for="lastname">Last Name</label>
           <input type="text" class="form-control" id="lastname" required
-                 [(ngModel)]="model.lastname" name="lastname">
-          <div [hidden]="name.valid || name.pristine"
+                 [(ngModel)]="model.lastname" name="lastname" #lastname="ngModel">
+          <div [hidden]="lastname.valid || lastname.pristine"
                class="alert alert-danger">
             Last Name is required
           </div>
@@ -27,8 +27,8 @@
         <div class="form-group pad-right">
           <label for="address">Address Line 1</label>
           <input type="text" class="form-control" id="address" required
-                 [(ngModel)]="model.address" name="address">
-          <div [hidden]="name.valid || name.pristine"
+                 [(ngModel)]="model.address" name="address" #address="ngModel">
+          <div [hidden]="address.valid || address.pristine"
                class="alert alert-danger">
             This field is required
           </div>
@@ -43,8 +43,8 @@
         <div class="form-group col-sm-6">
           <label for="town">Town</label>
           <input type="text" class="form-control" id="town" required
-                 [(ngModel)]="model.town" name="town">
-          <div [hidden]="name.valid || name.pristine"
+                 [(ngModel)]="model.town" name="town" #town="ngModel">
+          <div [hidden]="town.valid || town.pristine"
                class="alert alert-danger">
             This field is required
           </div>
@@ -53,8 +53,8 @@
         <div class="form-group col-sm-6">
           <label for="postcode">Post Code</label>
           <input type="text" class="form-control" id="postcode" required
-                 [(ngModel)]="model.postcode" name="postcode">
-          <div [hidden]="name.valid || name.pristine"
+                 [(ngModel)]="model.postcode" name="postcode" #postcode="ngModel">
+          <div [hidden]="postcode.valid || postcode.pristine"
                class="alert alert-danger">
             This field is required
           </div>
@@ -63,8 +63,8 @@
         <div class="form-group pad-right">
           <label for="phone">Phone</label>
           <input type="tel" class="form-control" id="phone" required
-                 [(ngModel)]="model.phone" name="phone">
-          <div [hidden]="name.valid || name.pristine"
+                 [(ngModel)]="model.phone" name="phone" #phone="ngModel">
+          <div [hidden]="phone.valid || phone.pristine"
                class="alert alert-danger">
             Phone number is required
           </div>
@@ -73,8 +73,8 @@
         <div class="form-group pad-right">
           <label for="email">Email</label>
           <input type="text" class="form-control" id="email" required
-                 [(ngModel)]="model.email" name="email">
-          <div [hidden]="name.valid || name.pristine"
+                 [(ngModel)]="model.email" name="email" #email="ngModel">
+          <div [hidden]="email.valid || email.pristine"
                class="alert alert-danger">
             Email is required
           </div>

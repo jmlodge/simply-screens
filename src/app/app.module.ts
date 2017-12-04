@@ -19,6 +19,9 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { ModalModule } from 'ngx-bootstrap';
 import { PhoneDetailComponent } from './phone-detail/phone-detail.component';
 
+import { FilterPipe } from './filter.pipe';
+import { AboutComponent } from './about/about.component';
+
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
@@ -39,6 +42,8 @@ const appRoutes: Routes = [
     ContactFromComponent,
     MapComponent,
     PhoneDetailComponent,
+    FilterPipe,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
