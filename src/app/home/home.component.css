@@ -89,7 +89,7 @@ h1 h2 h3 h4 h5 h6 {
 .pop-repairs {
   z-index: 20;
   position: absolute;
-  top:60%;
+  top:55%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%)

@@ -1,0 +1,31 @@
+.container {
+  margin-top: 75px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.staff {
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.staff img {
+  padding: 0 20px 0 20px;
+  width: 400px;
+}
+
+.center {
+  text-align: center;
+}
+
+accordion {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px 0 20px;
+}
+
+
+.testimonial {
+  padding: 75px;
+}

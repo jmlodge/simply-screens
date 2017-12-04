@@ -4,7 +4,7 @@
     <img [src]="homeObj.icon">
     <h2>{{homeObj.title}}</h2>
     <form id="filter">
-      <input type="text" [(ngModel)]="term"  [ngModelOptions]="{standalone: true}"
+      <input type="text" [(ngModel)]="term" [ngModelOptions]="{standalone: true}" #search="ngModel"
              placeholder=" What screen are you looking for?"/>
       <button type="button"><i class="fa fa-search"></i></button>
     </form>
@@ -14,7 +14,12 @@
 </div>
 <div class="pop-repairs">
   <div class="container">
-    <h3>Top Screen Repairs</h3>
+    <div [hidden]="!search.pristine">
+      <h3>{{homeObj.top}}</h3>
+    </div>
+    <div [hidden]="search.pristine">
+      <h3>{{homeObj.search}}</h3>
+    </div>
     <div class="ph-flx-con">
       <a *ngFor="let phone of phones | filter: term" routerLink="/detail/{{phone.id}}">
         <div class="module">

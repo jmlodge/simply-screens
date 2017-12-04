@@ -7,8 +7,8 @@ export class FilterPipe implements PipeTransform {
 
   transform(phones: any, term: any): any {
     // check if undefined
-    if (term === null) {
-      return phones;
+    if (term === undefined || term === '') {
+      return phones.slice(0, 4);
     }
     // return updated phones array
     return phones.filter(function (phone) {

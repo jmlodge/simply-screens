@@ -14,6 +14,7 @@ import { FilterPipe } from '../filter.pipe';
 export class HomeComponent implements OnInit {
   homeObj: Object;
   phones: PhoneClass [];
+  fader = false;
   getPhones(): void {
     this.phoneService.getPhones()
       .subscribe(phones => this.phones = phones);

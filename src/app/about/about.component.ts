@@ -12,7 +12,7 @@ export class AboutComponent implements OnInit {
   constructor(private contentService: ContentService) { }
 
   ngOnInit() {
-    this.aboutObj = this.contentService.Objs['home'];
+    this.aboutObj = this.contentService.Objs['about'];
   }
 
 }

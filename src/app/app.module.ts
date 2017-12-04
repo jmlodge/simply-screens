@@ -16,7 +16,7 @@ import { ContentService } from './shared/service/content.service';
 
 import { AppBootstrapModule } from './bootstrap/bootstrap.module';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import { ModalModule } from 'ngx-bootstrap';
+import { ModalModule, CarouselModule, AccordionModule } from 'ngx-bootstrap';
 import { PhoneDetailComponent } from './phone-detail/phone-detail.component';
 
 import { FilterPipe } from './filter.pipe';
@@ -26,6 +26,7 @@ import { AboutComponent } from './about/about.component';
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'home', component: HomeComponent },
+  { path: 'about', component: AboutComponent},
   { path: 'service', component: ServicesComponent},
   { path: 'contact', component: ContactFromComponent },
   { path: 'detail/:id', component: PhoneDetailComponent},
@@ -52,6 +53,8 @@ const appRoutes: Routes = [
     ),
     AppBootstrapModule,
     ModalModule.forRoot(),
+    AccordionModule.forRoot(),
+    CarouselModule.forRoot(),
     AngularFontAwesomeModule,
     FormsModule,
     AgmCoreModule.forRoot({
