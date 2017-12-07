@@ -1,6 +1,4 @@
-h1 h2 h3 h4 h5 h6 {
-  font-family: Lato, Arial, sans-serif;
-}
+/* home background */
 
 .home-banner {
   height: 100vh;
@@ -12,6 +10,11 @@ h1 h2 h3 h4 h5 h6 {
   position: relative;
   width: 100%;
 }
+
+/* home background END */
+
+/* search box */
+
 .home-search {
   position: absolute;
   top: 20%;
@@ -23,30 +26,6 @@ h1 h2 h3 h4 h5 h6 {
   background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 10px 10px 5px #888888;
   border-radius: 2px;
-}
-
-@media screen and (max-width: 768px) {
-  .home-banner {
-    background-color: #d5deed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 500px;
-  }
-
-  .home-banner img {
-    display: none;
-  }
-
-  .home-search {
-    flex: auto;
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-top: 100px !important; /* makes sure that on smaller screen margin-top is 100px */
-    margin-bottom: 100px;
-
-  }
 }
 
 .home-search img {
@@ -86,6 +65,10 @@ h1 h2 h3 h4 h5 h6 {
 
 }
 
+/* search box END */
+
+/* popular repairs and search results */
+
 .pop-repairs {
   z-index: 20;
   position: absolute;
@@ -95,19 +78,7 @@ h1 h2 h3 h4 h5 h6 {
   transform: translateX(-50%)
 }
 
-@media screen and (max-width: 1205px) {
-  .pop-repairs {
-    position: relative;
-  }
-  .home-banner {
-    height: 60vh;
-  }
-  .home-search {
-    margin-top: 20px;
-  }
-}
-
-.ph-flx-con {
+.phone-flx {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -116,7 +87,7 @@ h1 h2 h3 h4 h5 h6 {
   width: 100%;
 }
 
-.ph-flx-con a {
+.phone-flx a {
   height: 150px;
 }
 
@@ -125,7 +96,7 @@ h3 {
   margin-bottom: 20px;
 }
 
-.module h4 {
+.phone-card h4 {
   position: relative;
   margin-left: 20px;
 }
@@ -134,7 +105,7 @@ h3 {
   margin-top: -10px;
 }
 
-.module {
+.phone-card {
   flex-grow: 1;
   margin:20px;
   padding: 20px;
@@ -147,7 +118,7 @@ h3 {
   box-shadow: 10px 10px 5px #888888;
   border-radius: 2px;
 }
-.module:hover {
+.phone-card:hover {
   background-color: #EEE;
   cursor: pointer;
   color: #607d8b;
@@ -162,7 +133,7 @@ a {
   text-decoration: none;
 }
 
-.module img {
+.phone-card img {
   max-width: 100px;
   float: left;
   margin-top: -12px;
@@ -170,14 +141,56 @@ a {
   border-radius: 2px;
 }
 
+/* popular repairs and search results END */
+
+/* media queries */
+
 @media screen and (max-width: 768px) {
-  .ph-flx-con {
+  .phone-flx {
     justify-content: space-around;
     flex-direction:column;
   }
 
-  .module {
+  .phone-card {
     width: 320px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .home-banner {
+    background-color: #d5deed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+  }
+
+  .home-banner img {
+    display: none;
+  }
+
+  .home-search {
+    flex: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 100px !important; /* makes sure that on smaller screen margin-top is 100px */
+    margin-bottom: 100px;
+
+  }
+}
+
+@media screen and (max-width: 1205px) {
+  .pop-repairs {
+    position: relative;
+  }
+  .home-banner {
+    height: 60vh;
+  }
+  .home-search {
+    margin-top: 20px;
+  }
+}
+
+/* media queries END */
 

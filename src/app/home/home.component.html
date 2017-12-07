@@ -1,3 +1,4 @@
+<!-- home background banner and search -->
 <div class="home-banner">
   <img [src]="homeObj.image">
   <div class="home-search">
@@ -10,8 +11,10 @@
     </form>
     <h5>{{homeObj.subtitle}}</h5>
   </div>
-
 </div>
+<!-- home background banner and search END -->
+
+<!-- popular repairs and search results -->
 <div class="pop-repairs">
   <div class="container">
     <div [hidden]="!search.pristine">
@@ -20,9 +23,9 @@
     <div [hidden]="search.pristine">
       <h3>{{homeObj.search}}</h3>
     </div>
-    <div class="ph-flx-con">
+    <div class="phone-flx">
       <a *ngFor="let phone of phones | filter: term" routerLink="/detail/{{phone.id}}">
-        <div class="module">
+        <div class="phone-card">
           <img [src]="phone.image">
           <h4>{{phone.name}}</h4>
           <br>
@@ -32,3 +35,4 @@
     </div>
   </div>
 </div>
+<!-- popular repairs and search results END -->
