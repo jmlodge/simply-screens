@@ -1,3 +1,5 @@
+/* transitions to reduce nav size and fade logo */
+
 nav {
   min-height: 75px;
   -webkit-transition: all 1s;
@@ -5,10 +7,6 @@ nav {
   -ms-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-}
-
-nav.navbar.navbar-inverse {
-  margin-bottom: 0;
 }
 
 .page-scroll {
@@ -29,3 +27,22 @@ img {
   -o-transition: opacity .75s ease-in-out;
   transition: opacity .75s ease-in-out;
 }
+
+/* transitions to reduce nav size and fade logo END */
+
+nav.navbar.navbar-inverse {
+  margin-bottom: 0;
+  background-color: #607d8b;
+}
+
+/* font and background colours */
+
+#navbar ul li a {
+  color: thistle;
+}
+
+.navbar-brand {
+  color: thistle;
+}
+
+/* font and background colours END */
