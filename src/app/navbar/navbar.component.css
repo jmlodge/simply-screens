@@ -41,6 +41,10 @@ nav.navbar.navbar-inverse {
   color: thistle;
 }
 
+#navbar ul li a:hover {
+  color: darkslateblue;
+}
+
 .navbar-brand {
   color: thistle;
 }

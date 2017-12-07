@@ -1,67 +1,88 @@
-<div class="container">
-  <h3>{{aboutObj.title}}</h3>
-  <div class="row staff">
+<div [ngStyle]="{'background-image': 'url(' + aboutObj.image.background + ')'}">
+  <div class="container">
+    <h3 class="about-title">- {{aboutObj.title}} -</h3>
 
-    <div class="center col-md-6 col-sm-12">
-      <div>
-        <h4>Joseph Lodge - CEO</h4>
+    <div class="row about-text">
+      <div class="col-md-6 col-sm-12 about-text-inner">
+        <h4>- {{aboutObj.subtitle.serviceTitle}} -</h4>
+        <p>
+          {{aboutObj.service}}
+        </p>
       </div>
-      <img [src]="aboutObj.image.me">
-      <accordion>
-        <accordion-group>
-          <div accordion-heading>
-          About me
-          <span class="float-right pull-right"><i class="fa fa-caret-down"></i></span>
-        </div>
-          This is just some content to illustrate fancy headings.
-        </accordion-group>
-      </accordion>
+
+      <div class="col-md-6 col-sm-12 about-text-inner">
+        <h4>- {{aboutObj.subtitle.historyTitle}} -</h4>
+        <p>
+          {{aboutObj.history}}
+        </p>
+      </div>
     </div>
 
-    <div class="center col-md-6 col-sm-12">
-      <div>
-        <h4>Sarah Cumming - COO</h4>
-      </div>
-      <img [src]="aboutObj.image.sarah">
-      <accordion>
-        <accordion-group>
-          <div accordion-heading>
-            About me
+    <br>
+
+    <div class="row about-text staff">
+
+      <div class="center col-md-6 col-sm-12">
+        <div class="staff-card-head">
+          <h4>Joseph Lodge - CEO</h4>
+        </div>
+        <img [src]="aboutObj.image.me">
+        <accordion>
+          <accordion-group>
+            <div accordion-heading>
+            About Joseph
             <span class="float-right pull-right"><i class="fa fa-caret-down"></i></span>
           </div>
-          This is just some content to illustrate fancy headings.
-        </accordion-group>
-      </accordion>
+            This is just some content to illustrate fancy headings.
+          </accordion-group>
+        </accordion>
+      </div>
+
+      <div class="center col-md-6 col-sm-12">
+        <div class="staff-card-head">
+          <h4>Sarah Cumming - COO</h4>
+        </div>
+        <img [src]="aboutObj.image.sarah">
+        <accordion>
+          <accordion-group>
+            <div accordion-heading>
+              About Sarah
+              <span class="float-right pull-right"><i class="fa fa-caret-down"></i></span>
+            </div>
+            This is just some content to illustrate fancy headings.
+          </accordion-group>
+        </accordion>
+      </div>
     </div>
-  </div>
 
-  <h3>{{aboutObj.testTitle}}</h3>
-  <div class="row testimonial">
-    <carousel>
+    <h3 class="about-title">- {{aboutObj.testTitle}} -</h3>
+    <div class="row testimonial">
+      <carousel>
 
-      <slide>
-        <img [src]="aboutObj.image.testOne" alt="First slide" style="display: block; width: 100%;">
-        <div class="carousel-caption">
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div>
-      </slide>
+        <slide>
+          <img [src]="aboutObj.image.testOne" alt="First slide" style="display: block; width: 100%;">
+          <div class="carousel-caption">
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </slide>
 
-      <slide>
-        <img [src]="aboutObj.image.testTwo" alt="Second slide" style="display: block; width: 100%;">
-        <div class="carousel-caption">
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </slide>
+        <slide>
+          <img [src]="aboutObj.image.testTwo" alt="Second slide" style="display: block; width: 100%;">
+          <div class="carousel-caption">
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </slide>
 
-      <slide>
-        <img [src]="aboutObj.image.testThree" alt="Third slide" style="display: block; width: 100%;">
-        <div class="carousel-caption">
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </div>
-      </slide>
-    </carousel>
+        <slide>
+          <img [src]="aboutObj.image.testThree" alt="Third slide" style="display: block; width: 100%;">
+          <div class="carousel-caption">
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
+        </slide>
+      </carousel>
+    </div>
   </div>
 </div>
