@@ -40,7 +40,10 @@ export class ContentService {
     },
     'nav': {
       logo: '/assets/mobile-phone-logo-icon.png'
-    }
+    },
+    'contact': {
+      background: '/assets/circles-light.png'
+    },
   };
 }
 

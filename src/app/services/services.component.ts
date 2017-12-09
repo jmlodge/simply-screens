@@ -30,6 +30,6 @@ export class ServicesComponent implements OnInit {
 
   ngOnInit() {
     this.getPhones();
-    this.serviceObj = this.contentService.Objs['home'];
+    this.serviceObj = this.contentService.Objs['service'];
   }
 }

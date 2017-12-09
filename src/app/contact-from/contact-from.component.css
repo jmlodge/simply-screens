@@ -19,6 +19,18 @@
   justify-content: center;
 }
 
+.contact-left h3 {
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 20px 10px 15px 15px;
+  border-bottom: solid 1px thistle;
+}
+
+#lastname,
+#postcode {
+  margin-left: 4px;
+}
+
 .contact-right {
   display: flex;
   flex-direction: column;
@@ -26,6 +38,26 @@
   float: right;
   align-items: center;
   justify-content: center;
+}
+
+.contact-right p, h3 {
+  padding: 0 30px 0 30px;
+}
+
+#form-sm button {
+  margin: 10px 0 0 15px;
+}
+
+#btn-sub {
+  background-color: thistle;
+  border: solid 1px #607d8b;
+  color: #607d8b;
+}
+
+#btn-new {
+  background-color: #607d8b;
+  border: solid 1px thistle;
+  color: thistle;
 }
 
 .col-sm-6 {
@@ -38,16 +70,22 @@
 
 .media-icons {
   width: 100%;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding: 0 50px 0 50px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  margin: 10px 0 50px 0;
+
 }
 
 .media-icons a {
   margin: 15px;
+  color: #607d8b;
+}
+
+.media-icons a:hover {
+  color: thistle;
 }
 
 .map-card {
@@ -69,6 +107,15 @@
     justify-content: center;
   }
 
+  #form-sm {
+    width: 70%;
+  }
+
+  #lastname,
+  #postcode {
+    margin-left: 0;
+  }
+
   .contact-right {
     display: flex;
     flex-direction: column;
@@ -77,3 +124,4 @@
     justify-content: center;
   }
 }
+
