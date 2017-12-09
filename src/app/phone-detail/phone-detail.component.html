@@ -1,7 +1,33 @@
-<div class="container">
-  <div class="detail" *ngIf="phone">
-    <h2>{{ phone.name }}</h2>
-    <div> id: {{ phone.id }} </div>
+<div [ngStyle]="{'background-image': 'url(' + detailObj.background + ')'}">
+  <div class="container">
+    <div class="detail" *ngIf="phone">
+      <h2>- {{ phone.name }} - {{ phone.model }} -</h2>
+      <div> id: {{ phone.id }} </div>
+      <img [src]="phone.image">
+      <ul>
+        <li>Screen Type - {{ phone.screen }}</li>
+        <li>Screen Cost - {{ phone.cost }}</li>
+        <li>Repair Cost - {{phone.repair }}</li>
+      </ul>
+    </div>
+    <div class="detail-btns">
+      <button class="btn" id="go-back" (click)="goBack()">Go Back</button>
+      <button class="btn" id="contact" routerLink="/contact/">Contact</button>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Just The Screen</h4>
+        <p>If you feel confident we are able to send you just the screen for you to repair yourself. Please take
+        note of the id number below the make and model and enter this along with SCREEN ONLY in the message field
+        our contact form</p>
+      </div>
+
+      <div class="col-md-6">
+        <h4>Full Repair</h4>
+        <p>If you would like our full repair service Please take note of the id number below the make and model and enter
+          this along with FULL REPAIR in the message field our contact form  </p>
+      </div>
+    </div>
   </div>
-  <button (click)="goBack()">go back</button>
 </div>

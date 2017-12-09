@@ -95,14 +95,24 @@
                    [(ngModel)]="model.message" name="message">
           </div>
 
-          <button type="button" class="btn btn-default" id="btn-new" (click)="newContact()">New Contact</button>
-          <button type="submit" class="btn btn-success" id="btn-sub" [disabled]="!contactForm.form.valid">Submit</button>
+          <button type="button" class="btn" id="btn-new" (click)="newContact()">New Contact</button>
+          <button type="submit" class="btn btn-sub" [disabled]="!contactForm.form.valid">Submit</button>
 
         </form>
 
       </div>
       <div [hidden]="!submitted">
-        <button class="btn btn-primary" (click)="submitted=false">Edit</button>
+        <h3> Thank you for getting in touch!</h3>
+        <p>One of our tecnitians will be in contact shortly to discuss your repair or if you requested just the screen
+        it will be sent out with recordered dilivery and will be with you within 48h.</p>
+        <div class="media-icons">
+          <i class="fa fa-envelope fa-2x"></i>
+          <i class="fa fa-envelope fa-2x"></i>
+          <i class="fa fa-envelope fa-2x"></i>
+        </div>
+        <div class="edit">
+          <button class="btn btn-sub" (click)="submitted=false">Edit</button>
+        </div>
       </div>
     </div>
 

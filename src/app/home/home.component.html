@@ -1,38 +1,40 @@
-<!-- home background banner and search -->
-<div class="home-banner">
-  <img [src]="homeObj.image">
-  <div class="home-search">
-    <img [src]="homeObj.icon">
-    <h2>{{homeObj.title}}</h2>
-    <form id="filter">
-      <input type="text" [(ngModel)]="term" [ngModelOptions]="{standalone: true}" #search="ngModel"
-             placeholder=" What screen are you looking for?"/>
-      <button type="button"><i class="fa fa-search"></i></button>
-    </form>
-    <h5>{{homeObj.subtitle}}</h5>
+<div [ngStyle]="{'background-image': 'url(' + homeObj.background + ')'}">
+  <!-- home background banner and search -->
+  <div class="home-banner">
+    <img id="banner-img" [src]="homeObj.image">
+    <div class="home-search">
+      <img [src]="homeObj.icon">
+      <h2>{{homeObj.title}}</h2>
+      <form id="filter">
+        <input type="text" [(ngModel)]="term" [ngModelOptions]="{standalone: true}" #search="ngModel"
+               placeholder=" What screen are you looking for?"/>
+        <button type="button"><i class="fa fa-search"></i></button>
+      </form>
+      <h5>{{homeObj.subtitle}}</h5>
+    </div>
   </div>
-</div>
-<!-- home background banner and search END -->
+  <!-- home background banner and search END -->
 
-<!-- popular repairs and search results -->
-<div class="pop-repairs">
-  <div class="container">
-    <div [hidden]="!search.pristine">
-      <h3>{{homeObj.top}}</h3>
-    </div>
-    <div [hidden]="search.pristine">
-      <h3>{{homeObj.search}}</h3>
-    </div>
-    <div class="phone-flx">
-      <a *ngFor="let phone of phones | filter: term" routerLink="/detail/{{phone.id}}">
-        <div class="phone-card">
-          <img [src]="phone.image">
-          <h4>{{phone.name}}</h4>
-          <br>
-          <h4 id="mod">{{phone.model}}</h4>
-        </div>
-      </a>
+  <!-- popular repairs and search results -->
+  <div class="pop-repairs">
+    <div class="container">
+      <div [hidden]="!search.pristine">
+        <h3>{{homeObj.top}}</h3>
+      </div>
+      <div [hidden]="search.pristine">
+        <h3>{{homeObj.search}}</h3>
+      </div>
+      <div class="phone-flx">
+        <a *ngFor="let phone of phones | filter: term" routerLink="/detail/{{phone.id}}">
+          <div class="phone-card">
+            <img [src]="phone.image">
+            <h4>{{phone.name}}</h4>
+            <br>
+            <h4 id="mod">{{phone.model}}</h4>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
+  <!-- popular repairs and search results END -->
 </div>
-<!-- popular repairs and search results END -->

@@ -9,6 +9,7 @@ export class ContentService {
       top: 'Top Screen Repairs',
       search: 'Search Results',
       image: 'assets/main-img-home.jpeg',
+      background: 'assets/stonehaven.png',
       icon: 'assets/main-icon-home.png'
     },
     'about': {
@@ -35,8 +36,8 @@ export class ContentService {
       }
     },
     'service': {
-      image: '/assets/smashed screen.jpg',
-      background: '/assets/circles-dark.png'
+      image: 'assets/smashed screen.jpg',
+      background: 'assets/circles-dark.png'
     },
     'nav': {
       logo: '/assets/mobile-phone-logo-icon.png'

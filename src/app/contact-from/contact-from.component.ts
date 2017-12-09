@@ -23,4 +23,3 @@ export class ContactFromComponent implements OnInit {
     this.contactObj = this.contentService.Objs['contact'];
   }
 }
-

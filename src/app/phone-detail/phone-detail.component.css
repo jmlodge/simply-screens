@@ -1,3 +1,52 @@
-.detail {
-  margin-top: 80px;
+.container {
+  background-color: rgba(255, 255, 255, 0.6);
 }
+
+.detail {
+  max-width: 800px;
+  text-align: center;
+  border: solid 2px thistle;
+  margin: 90px auto 0 auto;
+}
+
+.detail img {
+  border: solid 2px thistle;
+  max-width: 430px;
+  margin-top: 10px;
+}
+
+.detail ul {
+  width: 210px;
+  margin: 10px auto 10px auto;
+}
+
+.detail-btns {
+  margin: 10px auto 10px auto;
+  width: 200px;
+  padding-left: 20px;
+}
+
+#go-back {
+  background-color: thistle;
+  border: solid 1px #607d8b;
+  color: #607d8b;
+}
+
+#contact {
+  background-color: #607d8b;
+  border: solid 1px thistle;
+  color: thistle;
+}
+
+.row {
+  border-bottom: solid 1px thistle;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 545px) {
+  .detail img {
+    width: 90%;
+  }
+}
+
+
