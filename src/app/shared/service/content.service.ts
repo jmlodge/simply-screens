@@ -40,10 +40,10 @@ export class ContentService {
       background: 'assets/circles-dark.png'
     },
     'nav': {
-      logo: '/assets/mobile-phone-logo-icon.png'
+      logo: 'assets/mobile-phone-logo-icon.png'
     },
     'contact': {
-      background: '/assets/circles-light.png'
+      background: 'assets/circles-light.png'
     },
   };
 }
